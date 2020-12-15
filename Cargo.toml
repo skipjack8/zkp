@@ -1,0 +1,12 @@
+[package]
+name = "zkp"
+version = "0.1.0"
+authors = ["wenpinghou <skipjack8@live.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+redjubjub = "0.2.2"
+franklin_crypto = { package = "franklin-crypto", git = "https://github.com/skipjack8/franklin-crypto.git", branch="check-franklin-circuit-transpile-blake2b"}
+rand = "0.4.6"
