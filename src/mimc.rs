@@ -5,32 +5,32 @@ use rand::{thread_rng, Rng};
 use std::time::{Duration, Instant};
 
 // Bring in some tools for using pairing-friendly curves
-use franklin_crypto::bellman::pairing::{
+use hi_crypto::bellman::pairing::{
     Engine
 };
 
-use franklin_crypto::bellman::pairing::ff::{
+use hi_crypto::bellman::pairing::ff::{
     Field,
 };
 
 // We're going to use the BLS12-381 pairing-friendly elliptic curve.
-use franklin_crypto::bellman::pairing::bls12_381::{
+use hi_crypto::bellman::pairing::bls12_381::{
     Bls12
 };
 
-use franklin_crypto::bellman::pairing::bn256::{
+use hi_crypto::bellman::pairing::bn256::{
     Bn256
 };
 
 // We'll use these interfaces to construct our circuit.
-use franklin_crypto::bellman::{
+use hi_crypto::bellman::{
     Circuit,
     ConstraintSystem,
     SynthesisError
 };
 
 // We're going to use the Groth16 proving system.
-use franklin_crypto::bellman::groth16::{
+use hi_crypto::bellman::groth16::{
     Proof,
     generate_random_parameters,
     prepare_verifying_key,

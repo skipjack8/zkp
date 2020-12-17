@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 redjubjub = "0.2.2"
-franklin_crypto = { package = "franklin-crypto", git = "https://github.com/skipjack8/franklin-crypto.git", branch="check-franklin-circuit-transpile-blake2b"}
+hi_crypto = { package = "hi-crypto", git = "https://github.com/skipjack8/hi-crypto.git", branch="check-franklin-circuit-transpile-blake2b"}
 rand = "0.4.6"
